@@ -7,6 +7,7 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.contrib.middlewares.logging import LoggingMiddleware
 import sys
+
 sys.setrecursionlimit(50000)
 from functools import *
 
@@ -311,7 +312,7 @@ async def add_to_cart(call: types.CallbackQuery):
         cursor = conn.cursor()
 
         # Выбор изображения и имени товара
-        cursor.execute('SELECT img, name FROM products WHERE product_id = ?', (product_id))
+        cursor.execute('SELECT img, name FROM products WHERE product_id = ?', (product_id,))
         product = cursor.fetchone()
         print(f"Product: {product}")
         product_img, product_name = product
