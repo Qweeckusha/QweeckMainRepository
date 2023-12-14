@@ -1,0 +1,86 @@
+body {
+    background: #202020;
+    color: #fff;
+}
+
+aside {
+    float: left;
+    background: #181818;
+    width: 15%;
+    height: 100vh;
+    padding: 2.5%;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+    position: fixed;
+}
+
+.HT {
+    list-style-type: none;
+    text-align: center; /* Выравнивание по центру по горизонтали */
+    width: 100%;
+    margin-top: 40px;
+    padding: 0; /* Уберем внешний отступ у списка */
+}
+
+aside ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+aside ul li {
+    display: block;
+    margin-top: 10px;
+    transition: transform .5s ease;
+}
+
+aside ul li:hover, aside ul a:hover{
+    transform: scale(1.1);
+    text-decoration: none;
+    color: #eb5959;
+}
+
+aside img {
+    width: 100px;
+}
+
+h3 {
+    margin: 0 20px;
+}
+
+#logo {
+    text-align: center;
+}
+
+main .some {
+    float: left;
+    color: #fff;
+    width: 75%;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 15%;
+}
+
+main .some h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 7%;
+}
+
+main .some p {
+    max-width: 400px;
+    margin: 20px auto;
+}
+#error {
+    color: #eb5959;
+}
+
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;+
+}
+
+.custom-btn {
+    background-color: #eb5959;
+    color: #181818;
+}
